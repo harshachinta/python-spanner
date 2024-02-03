@@ -1,0 +1,168 @@
+{
+  "clientLibrary": {
+    "apis": [
+      {
+        "id": "google.spanner.executor.v1",
+        "version": "v1"
+      }
+    ],
+    "language": "PYTHON",
+    "name": "google-spanner-executor",
+    "version": "0.1.0"
+  },
+  "snippets": [
+    {
+      "canonical": true,
+      "clientMethod": {
+        "async": true,
+        "client": {
+          "fullName": "google.spanner.executor_v1.SpannerExecutorProxyAsyncClient",
+          "shortName": "SpannerExecutorProxyAsyncClient"
+        },
+        "fullName": "google.spanner.executor_v1.SpannerExecutorProxyAsyncClient.execute_action_async",
+        "method": {
+          "fullName": "google.spanner.executor.v1.SpannerExecutorProxy.ExecuteActionAsync",
+          "service": {
+            "fullName": "google.spanner.executor.v1.SpannerExecutorProxy",
+            "shortName": "SpannerExecutorProxy"
+          },
+          "shortName": "ExecuteActionAsync"
+        },
+        "parameters": [
+          {
+            "name": "requests",
+            "type": "Iterator[google.spanner.executor_v1.types.SpannerAsyncActionRequest]"
+          },
+          {
+            "name": "retry",
+            "type": "google.api_core.retry.Retry"
+          },
+          {
+            "name": "timeout",
+            "type": "float"
+          },
+          {
+            "name": "metadata",
+            "type": "Sequence[Tuple[str, str]"
+          }
+        ],
+        "resultType": "Iterable[google.spanner.executor_v1.types.SpannerAsyncActionResponse]",
+        "shortName": "execute_action_async"
+      },
+      "description": "Sample for ExecuteActionAsync",
+      "file": "spanner-cloud-executor_v1_generated_spanner_executor_proxy_execute_action_async_async.py",
+      "language": "PYTHON",
+      "origin": "API_DEFINITION",
+      "regionTag": "spanner-cloud-executor_v1_generated_SpannerExecutorProxy_ExecuteActionAsync_async",
+      "segments": [
+        {
+          "end": 61,
+          "start": 27,
+          "type": "FULL"
+        },
+        {
+          "end": 61,
+          "start": 27,
+          "type": "SHORT"
+        },
+        {
+          "end": 40,
+          "start": 38,
+          "type": "CLIENT_INITIALIZATION"
+        },
+        {
+          "end": 54,
+          "start": 41,
+          "type": "REQUEST_INITIALIZATION"
+        },
+        {
+          "end": 57,
+          "start": 55,
+          "type": "REQUEST_EXECUTION"
+        },
+        {
+          "end": 62,
+          "start": 58,
+          "type": "RESPONSE_HANDLING"
+        }
+      ],
+      "title": "spanner-cloud-executor_v1_generated_spanner_executor_proxy_execute_action_async_async.py"
+    },
+    {
+      "canonical": true,
+      "clientMethod": {
+        "client": {
+          "fullName": "google.spanner.executor_v1.SpannerExecutorProxyClient",
+          "shortName": "SpannerExecutorProxyClient"
+        },
+        "fullName": "google.spanner.executor_v1.SpannerExecutorProxyClient.execute_action_async",
+        "method": {
+          "fullName": "google.spanner.executor.v1.SpannerExecutorProxy.ExecuteActionAsync",
+          "service": {
+            "fullName": "google.spanner.executor.v1.SpannerExecutorProxy",
+            "shortName": "SpannerExecutorProxy"
+          },
+          "shortName": "ExecuteActionAsync"
+        },
+        "parameters": [
+          {
+            "name": "requests",
+            "type": "Iterator[google.spanner.executor_v1.types.SpannerAsyncActionRequest]"
+          },
+          {
+            "name": "retry",
+            "type": "google.api_core.retry.Retry"
+          },
+          {
+            "name": "timeout",
+            "type": "float"
+          },
+          {
+            "name": "metadata",
+            "type": "Sequence[Tuple[str, str]"
+          }
+        ],
+        "resultType": "Iterable[google.spanner.executor_v1.types.SpannerAsyncActionResponse]",
+        "shortName": "execute_action_async"
+      },
+      "description": "Sample for ExecuteActionAsync",
+      "file": "spanner-cloud-executor_v1_generated_spanner_executor_proxy_execute_action_async_sync.py",
+      "language": "PYTHON",
+      "origin": "API_DEFINITION",
+      "regionTag": "spanner-cloud-executor_v1_generated_SpannerExecutorProxy_ExecuteActionAsync_sync",
+      "segments": [
+        {
+          "end": 61,
+          "start": 27,
+          "type": "FULL"
+        },
+        {
+          "end": 61,
+          "start": 27,
+          "type": "SHORT"
+        },
+        {
+          "end": 40,
+          "start": 38,
+          "type": "CLIENT_INITIALIZATION"
+        },
+        {
+          "end": 54,
+          "start": 41,
+          "type": "REQUEST_INITIALIZATION"
+        },
+        {
+          "end": 57,
+          "start": 55,
+          "type": "REQUEST_EXECUTION"
+        },
+        {
+          "end": 62,
+          "start": 58,
+          "type": "RESPONSE_HANDLING"
+        }
+      ],
+      "title": "spanner-cloud-executor_v1_generated_spanner_executor_proxy_execute_action_async_sync.py"
+    }
+  ]
+}

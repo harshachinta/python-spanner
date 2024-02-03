@@ -72,6 +72,7 @@ def get_staging_dirs(
 spanner_default_version = "v1"
 spanner_admin_instance_default_version = "v1"
 spanner_admin_database_default_version = "v1"
+spanner_executor_default_version = "v1"
 
 clean_up_generated_samples = True
 
@@ -116,6 +117,19 @@ for library in get_staging_dirs(
     s.move(
         library,
         excludes=["google/cloud/spanner_admin_database/**", "*.*", "docs/index.rst", "**/gapic_version.py", "testing/constraints-3.7.txt",],
+    )
+
+for library in get_staging_dirs(
+    spanner_executor_default_version, "spanner_executor"
+):
+    s.replace(
+        library / "google/cloud/spanner_executor_v*/__init__.py",
+        "from google.cloud.spanner_executor import gapic_version as package_version",
+        f"from google.cloud.spanner_executor_{library.name} import gapic_version as package_version",
+        )
+    s.move(
+        library,
+        excludes=["google/cloud/spanner_executor/**", "*.*", "docs/index.rst", "**/gapic_version.py", "testing/constraints-3.7.txt",],
     )
 
 s.remove_staging_dirs()

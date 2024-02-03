@@ -1,0 +1,2 @@
+# Marker file for PEP 561.
+# The google-spanner-executor package uses inline types.

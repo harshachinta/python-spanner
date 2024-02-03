@@ -1,0 +1,33 @@
+ {
+  "comment": "This file maps proto services/RPCs to the corresponding library clients/methods",
+  "language": "python",
+  "libraryPackage": "google.spanner.executor_v1",
+  "protoPackage": "google.spanner.executor.v1",
+  "schema": "1.0",
+  "services": {
+    "SpannerExecutorProxy": {
+      "clients": {
+        "grpc": {
+          "libraryClient": "SpannerExecutorProxyClient",
+          "rpcs": {
+            "ExecuteActionAsync": {
+              "methods": [
+                "execute_action_async"
+              ]
+            }
+          }
+        },
+        "grpc-async": {
+          "libraryClient": "SpannerExecutorProxyAsyncClient",
+          "rpcs": {
+            "ExecuteActionAsync": {
+              "methods": [
+                "execute_action_async"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
